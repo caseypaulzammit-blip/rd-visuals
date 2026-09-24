@@ -1,5 +1,6 @@
-const CACHE = "rd-visuals-v1";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon.svg"];
+const CACHE = "rd-visuals-v4";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon.svg",
+  "./b1.txt", "./b2.txt", "./b3.txt", "./b4.txt", "./b5.txt", "./b6.txt"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
